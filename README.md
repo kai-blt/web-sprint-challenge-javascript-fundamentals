@@ -26,14 +26,30 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+.forEach is much like a for loop in that it iterates over an array of data. It however MUST iterate over every item and doesn't need the return keyword. Map is an array method that returns a new array and is used when you want to convert data and not distort the original array.
+
 
 2. Explain the difference between a callback and a higher order function.
+Callback is the function being passed as an argument into another function. Higher order functions are functions that take in other functions as arguments or returns a function back.
+
 
 3. What is closure?
+Closure is the concept that functions contained within other functions close over the local variable scope within which they are contained. The inner function can reach outside and have access to all variables in outer scopes. This pattern is used as it provides the ability to privatize data and protect the data from being acted upon from other areas of the program unless specific functions are called. It also allows the functions to retain a memory of the data per instance of the function called!
+
 
 4. Describe the four rules of the 'this' keyword.
+1. When "this" is in the global scope it refers to the window object. Window/Object binding.
+2. When an object method is called with the . notation, "this" is Implicit and refers to the object to the left of the dot.
+3. When the "new" keyword is used in a constructor function "this" refers to the specific instance of the object being generated. New Binding.
+4. When we use .call, .apply or .bind this is called Explicit binding and explicitly sets what "this" refers to.
+
 
 5. Why do we need super() in an extended class?
+We need to call super() in an extended class because this is what binds the subclass to the class that was extended. It pulls in all functionality from the original class it was derived from.
+
+
+
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -41,12 +57,12 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
@@ -57,22 +73,22 @@ Your finished project must include all of the following requirements:
 #### Task A: Objects and Arrays
 
 Test your knowledge of advanced array methods and callbacks.
-* [ ] Use the [arrays-callbacks.js](challenges/arrays-callbacks.js) link to get started.  Read the instructions carefully!
+* [x] Use the [arrays-callbacks.js](challenges/arrays-callbacks.js) link to get started.  Read the instructions carefully!
 
 #### Task B: Closure
 
 This challenge takes a look at closures as well as scope. 
-* [ ] Use the [closure.js](challenges/closure.js) link to get started. Read the instructions carefully!
+* [x] Use the [closure.js](challenges/closure.js) link to get started. Read the instructions carefully!
 
 #### Task C: Prototypes
 
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+* [x] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
 #### Task D: Classes
 
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
-* [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
+* [x] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
