@@ -26,14 +26,16 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-.forEach is much like a for loop in that it iterates over an array of data. It however MUST iterate over every item and  doesn't need the return keyword. Map is an array method that returns a new array and is used when you want to convert data and not distort the original array.
+.forEach is much like a for loop in that it iterates over an array of data. It however MUST iterate over every item and doesn't need the return keyword. Map is an array method that returns a new array and is used when you want to convert data and not distort the original array.
 
 
 2. Explain the difference between a callback and a higher order function.
 Callback is the function being passed as an argument into another function. Higher order functions are functions that take in other functions as arguments or returns a function back.
 
+
 3. What is closure?
 Closure is the concept that functions contained within other functions close over the local variable scope within which they are contained. The inner function can reach outside and have access to all variables in outer scopes. This pattern is used as it provides the ability to privatize data and protect the data from being acted upon from other areas of the program unless specific functions are called. It also allows the functions to retain a memory of the data per instance of the function called!
+
 
 4. Describe the four rules of the 'this' keyword.
 1. When "this" is in the global scope it refers to the window object. Window/Object binding.
